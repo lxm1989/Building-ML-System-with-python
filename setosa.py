@@ -1,7 +1,7 @@
 from irisdata import *
 
 plength=features[:,2]
-is_setosa=(lables=='setosa')
+is_setosa=(labels=='setosa')
 
 max=plength[is_setosa].max()
 min=plength[~is_setosa].min()
