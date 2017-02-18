@@ -1,4 +1,4 @@
-from irisdata import *
+from chat2.irisdata import *
 is_setosa=(labels=='setosa')
 features=features[~is_setosa]
 labels=labels[~is_setosa]

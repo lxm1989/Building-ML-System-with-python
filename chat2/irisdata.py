@@ -10,5 +10,3 @@ target = data['target']
 target_names = data['target_names']
 labels = target_names[target]
 
-
-    

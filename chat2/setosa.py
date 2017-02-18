@@ -1,4 +1,4 @@
-from irisdata import *
+from chat2.irisdata import *
 
 plength=features[:,2]
 is_setosa=(labels=='setosa')
