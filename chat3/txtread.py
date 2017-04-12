@@ -1,6 +1,7 @@
 import os
+import codecs
 
-posts = [open(os.path.join("data/",f)).read() for f in os.listdir("data")]
+posts = [codecs.open(os.path.join("data/",f)).read() for f in os.listdir("data")]
 
 #from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -48,5 +49,4 @@ for i in range(0,len(posts)):
         best_dist = d
         best_i = i
 print("Best post is %i with dist=%.2f"%(best_i,best_dist))
-
 
